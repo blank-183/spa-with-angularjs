@@ -4,8 +4,8 @@
   angular.module('NarrowItDownApp', [])
     .controller('NarrowItDownController', NarrowItDownController)
     .service('MenuSearchService', MenuSearchService)
-    .directive('foundItems', FoundItems)
     .constant('ApiBaseUrl', 'https://coursera-jhu-default-rtdb.firebaseio.com')
+    .directive('foundItems', FoundItems)
 
   NarrowItDownController.$inject = ['MenuSearchService'];
   function NarrowItDownController() {
@@ -21,7 +21,7 @@
   function FoundItems() {
     var ddo = {
       restrict: 'E',
-      templateUr: 'foundItems.html'
+      templateUrl: 'foundItems.html'
     }
 
     return ddo;
