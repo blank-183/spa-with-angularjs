@@ -1,0 +1,13 @@
+<div class="container col-6 p-4">
+  <h2>ITEMS AVAILABLE FOR THE SELECTED CATEGORY</h2>
+  <table class="table">
+    <tr>
+      <th>Item Name</th>
+      <th>Description</th>
+    </tr>
+    <tr ng-repeat="item in $ctrl.items.menu_items">
+      <td><strong>{{ item.name }}</strong></td>
+      <td>{{ item.description }}</td>
+    </tr>
+  </table>
+</div>
