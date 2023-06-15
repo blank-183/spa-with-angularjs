@@ -6,10 +6,13 @@
             <h4>Last name: <strong>{{infoCtrl.user.lastName}}</strong></h4>
             <h4>Email: <strong>{{infoCtrl.user.email}}</strong></h4>
             <h4>Phone: <strong>{{infoCtrl.user.phone}}</strong></h4>
-            <h4>Favorite dish:</h4>
-            <menu-item menu-item="infoCtrl.user.favoriteDishDetails"
-                category-short-name="infoCtrl.user.category">
-            </menu-item>
+
+            <div ng-if="infoCtrl.user.favoriteDishDetails">
+                <h4>Favorite dish:</h4>
+                <menu-item menu-item="infoCtrl.user.favoriteDishDetails" category-short-name="infoCtrl.user.category">
+                </menu-item>
+            </div>
+
 
         </div>
 
