@@ -1,14 +1,18 @@
 <div class="container">
     <div class="row">
         <div ng-show="infoCtrl.signedUp">
-            <h1>Showing information for user.</h1>
-            <p>First name: {{infoCtrl.user.firstName}}</p>
-            <p>Last name: {{infoCtrl.user.lastName}}</p>
-            <p>Email: {{infoCtrl.user.email}}</p>
-            <p>Phone: {{infoCtrl.user.phone}}</p>
-            <p>Favorite dish: {{infoCtrl.user.favoriteDishDetails.name}}</p>
-            <p>{{infoCtrl.user.favoriteDishDetails.description}}</p>
-            <img class="img-responsive" ng-src="{{infoCtrl.apiPath}}/images/{{infoCtrl.user.favoriteDish}}.jpg" alt="{{infoCtrl.user.favoriteDishDetails.name}}" />
+            <h1>USER PROFILE</h1>
+            <h4>First name: <strong>{{infoCtrl.user.firstName}}</strong></h4>
+            <h4>Last name: <strong>{{infoCtrl.user.lastName}}</strong></h4>
+            <h4>Email: <strong>{{infoCtrl.user.email}}</strong></h4>
+            <h4>Phone: <strong>{{infoCtrl.user.phone}}</strong></h4>
+            <h4>Favorite dish:</h4>
+
+            <h4>Dish: <strong>{{infoCtrl.user.favoriteDishDetails.name}}</strong></h4>
+            <h4>Description: <strong>{{infoCtrl.user.favoriteDishDetails.name}}</strong></h4>
+            <img class="img-responsive" width="250" height="150"
+                ng-src="images/menu/{{infoCtrl.user.category}}/{{infoCtrl.user.favoriteDishDetails.short_name}}.jpg"
+                alt="{{infoCtrl.user.favoriteDishDetails.name}}">
 
         </div>
 
